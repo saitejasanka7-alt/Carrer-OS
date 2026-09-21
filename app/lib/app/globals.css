@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f8f3;
+  --foreground: #17201d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--background);
+  font-family: Arial, sans-serif;
+}
+
+button,
+textarea,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #c9ed72;
+  color: #17201d;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.interview-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.wave {
+  animation: pulseWave 1.4s ease-in-out infinite;
+}
+
+.wave:nth-child(2) {
+  animation-delay: .15s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: .3s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: .45s;
+}
+
+@keyframes pulseWave {
+  0%, 100% {
+    transform: scaleY(.45);
+    opacity: .5;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
