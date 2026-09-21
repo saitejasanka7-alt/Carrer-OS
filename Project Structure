@@ -1,0 +1,12 @@
+careeros/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── lib/
+│   └── services.ts
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
